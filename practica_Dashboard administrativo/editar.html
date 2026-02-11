@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <h2>ShopMaster - Editar Producto</h2>
+    <a href="index.html" class="btn-primary">Inicio</a>
+</header>
+
+<main class="edit-container">
+    <h1>Editar Producto</h1>
+
+    <div class="form-group">
+        <label>Nombre del Producto</label>
+        <input type="text" id="titulo">
+    </div>
+
+    <div class="form-group">
+        <label>Precio ($)</label>
+        <input type="number" id="precio">
+    </div>
+
+    <div class="form-group">
+        <label>Categoría</label>
+        <select id="categoria">
+            <option value="smartphones">Smartphones</option>
+            <option value="laptops">Laptops</option>
+            <option value="fragrances">Fragancias</option>
+            <option value="skincare">Cuidado de piel</option>
+            <option value="groceries">Comestibles</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Descripción</label>
+        <textarea id="descripcion" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>URL imagen (opcional)</label>
+        <input type="text" id="imagen">
+    </div>
+
+    <div class="form-actions">
+        <button class="btn-back" onclick="window.history.back()">⬅ Volver</button>
+        <button class="btn-save" onclick="editarProducto()">Guardar Cambios</button>
+    </div>
+
+    <div id="mensaje-exito"></div>
+</main>
+
+
+
+<script src="editar.js"></script>
+<link rel="stylesheet" href="editar.css">
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+.search input {
+    padding: 10px;
+    width: 200px;
+}
+
+.search button {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: bisque;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.detail {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.back-btn {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.categories {
+    margin-bottom: 20px;
+}
+
+.categories select {
+    padding: 8px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.detail-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.detail-card img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.detail-info {
+    text-align: left;
+}
+
+.detail-info h2 {
+    margin-top: 0;
+}
+
+.ingredients {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.ingredients li {
+    margin-bottom: 5px;
+}
+
+.back-btn {
+    background-color: #ff9800;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+

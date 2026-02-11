@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TheMealDB App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Recetas con TheMealDB</h1>
+
+
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Buscar comida...">
+        <button id="searchBtn">Buscar</button>
+    </div>
+  
+    <div class="categories">
+        <select id="categorySelect">
+            <option value="">categoría</option>
+        </select>
+    </div>
+
+
+    <div id="mealsContainer" class="cards"></div>
+
+   
+    <div id="mealDetail" class="detail hidden"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
